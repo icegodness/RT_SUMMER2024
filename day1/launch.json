@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "rt-spark-openocd",
+            "executable": "${workspaceRoot}//rt-thread.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "targetId": "STM32F407ZG",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink-v2.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "armToolchainPath": "C:\\Enviroment\\Env\\env-windows\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin",
+            "gdbPath": "C:\\Enviroment\\Env\\env-windows\\tools\\gnu_gcc\\arm_gcc\\mingw\\bin\\arm-none-eabi-gdb.exe" 
+        }
+    ]
+}
